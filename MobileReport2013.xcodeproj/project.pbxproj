@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B431F116F0D30B00A63145 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B431F016F0D30B00A63145 /* UIKit.framework */; };
+		01B431F316F0D30B00A63145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B431F216F0D30B00A63145 /* Foundation.framework */; };
+		01B431F516F0D30B00A63145 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B431F416F0D30B00A63145 /* CoreGraphics.framework */; };
+		01B431FB16F0D30B00A63145 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01B431F916F0D30B00A63145 /* InfoPlist.strings */; };
+		01B431FD16F0D30B00A63145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B431FC16F0D30B00A63145 /* main.m */; };
+		01B4320116F0D30B00A63145 /* OfflineEditingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4320016F0D30B00A63145 /* OfflineEditingAppDelegate.m */; };
+		01B4320316F0D30B00A63145 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4320216F0D30B00A63145 /* Default.png */; };
+		01B4320516F0D30B00A63145 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4320416F0D30B00A63145 /* Default@2x.png */; };
+		01B4320716F0D30B00A63145 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4320616F0D30B00A63145 /* Default-568h@2x.png */; };
+		01B4320A16F0D30B00A63145 /* OfflineEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4320916F0D30B00A63145 /* OfflineEditingViewController.m */; };
+		01B4320D16F0D30B00A63145 /* OfflineEditingViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4320B16F0D30B00A63145 /* OfflineEditingViewController_iPhone.xib */; };
+		01B4321016F0D30B00A63145 /* OfflineEditingViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4320E16F0D30B00A63145 /* OfflineEditingViewController_iPad.xib */; };
+		01B4321716F0D3C100A63145 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4321616F0D3C100A63145 /* CoreLocation.framework */; };
+		01B4321916F0D3D800A63145 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4321816F0D3D800A63145 /* CoreText.framework */; };
+		01B4321B16F0D3E500A63145 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4321A16F0D3E500A63145 /* libc++.dylib */; };
+		01B4321D16F0D3EE00A63145 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4321C16F0D3EE00A63145 /* libz.dylib */; };
+		01B4321F16F0D3F800A63145 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4321E16F0D3F800A63145 /* OpenGLES.framework */; };
+		01B4322116F0D40900A63145 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4322016F0D40900A63145 /* MediaPlayer.framework */; };
+		01B4322316F0D41500A63145 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4322216F0D41500A63145 /* MobileCoreServices.framework */; };
+		01B4322516F0D42800A63145 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4322416F0D42800A63145 /* Security.framework */; };
+		01B4323816F0D4B800A63145 /* iFEMA_MobileReporter_iPad_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322716F0D4B800A63145 /* iFEMA_MobileReporter_iPad_29.png */; };
+		01B4323916F0D4B800A63145 /* iFEMA_MobileReporter_iPad_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322816F0D4B800A63145 /* iFEMA_MobileReporter_iPad_50.png */; };
+		01B4323A16F0D4B800A63145 /* iFEMA_MobileReporter_iPad_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322916F0D4B800A63145 /* iFEMA_MobileReporter_iPad_512.png */; };
+		01B4323B16F0D4B800A63145 /* iReporter_iPad_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322A16F0D4B800A63145 /* iReporter_iPad_50.png */; };
+		01B4323C16F0D4B800A63145 /* iReporter_iPad_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322B16F0D4B800A63145 /* iReporter_iPad_29.png */; };
+		01B4323D16F0D4B800A63145 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322C16F0D4B800A63145 /* Icon-72.png */; };
+		01B4323E16F0D4B800A63145 /* iReporter_iPad_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322D16F0D4B800A63145 /* iReporter_iPad_512.png */; };
+		01B4323F16F0D4B800A63145 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322E16F0D4B800A63145 /* Default-Portrait~ipad.png */; };
+		01B4324016F0D4B800A63145 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4322F16F0D4B800A63145 /* Default-Landscape~ipad.png */; };
+		01B4324116F0D4B800A63145 /* Default-Landscape~ipad_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323016F0D4B800A63145 /* Default-Landscape~ipad_old.png */; };
+		01B4324216F0D4B800A63145 /* Default-Portrait~ipad_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323116F0D4B800A63145 /* Default-Portrait~ipad_old.png */; };
+		01B4324316F0D4B800A63145 /* iFEMA_MobileReporter_iPad_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323216F0D4B800A63145 /* iFEMA_MobileReporter_iPad_72.png */; };
+		01B4324416F0D4B800A63145 /* PolygonReport20.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323316F0D4B800A63145 /* PolygonReport20.png */; };
+		01B4324516F0D4B800A63145 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323416F0D4B800A63145 /* location.png */; };
+		01B4324616F0D4B800A63145 /* Settings20.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323516F0D4B800A63145 /* Settings20.png */; };
+		01B4324716F0D4B800A63145 /* CheckIn20.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323616F0D4B800A63145 /* CheckIn20.png */; };
+		01B4324816F0D4B800A63145 /* Report20.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B4323716F0D4B800A63145 /* Report20.png */; };
+		01B4325416F0D4DC00A63145 /* Mobile_ReporterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4324A16F0D4DB00A63145 /* Mobile_ReporterViewController.m */; };
+		01B4325516F0D4DC00A63145 /* Mobile_ReporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4324B16F0D4DB00A63145 /* Mobile_ReporterViewController.xib */; };
+		01B4325616F0D4DC00A63145 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4324D16F0D4DB00A63145 /* SettingsViewController.m */; };
+		01B4325716F0D4DC00A63145 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4324E16F0D4DB00A63145 /* SettingsViewController.xib */; };
+		01B4325816F0D4DC00A63145 /* FeatureTemplatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4325016F0D4DB00A63145 /* FeatureTemplatePickerViewController.m */; };
+		01B4325916F0D4DC00A63145 /* FeatureTemplatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4325116F0D4DC00A63145 /* FeatureTemplatePickerViewController.xib */; };
+		01B4325A16F0D4DC00A63145 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B4325316F0D4DC00A63145 /* LoadingView.m */; };
+		01B4325C16F0DA2000A63145 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B4325B16F0DA2000A63145 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B431ED16F0D30B00A63145 /* MobileReporter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileReporter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B431F016F0D30B00A63145 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01B431F216F0D30B00A63145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01B431F416F0D30B00A63145 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01B431F816F0D30B00A63145 /* MobileReport2013-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileReport2013-Info.plist"; sourceTree = "<group>"; };
+		01B431FA16F0D30B00A63145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01B431FC16F0D30B00A63145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01B431FE16F0D30B00A63145 /* MobileReport2013-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileReport2013-Prefix.pch"; sourceTree = "<group>"; };
+		01B431FF16F0D30B00A63145 /* OfflineEditingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfflineEditingAppDelegate.h; sourceTree = "<group>"; };
+		01B4320016F0D30B00A63145 /* OfflineEditingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfflineEditingAppDelegate.m; sourceTree = "<group>"; };
+		01B4320216F0D30B00A63145 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		01B4320416F0D30B00A63145 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		01B4320616F0D30B00A63145 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		01B4320816F0D30B00A63145 /* OfflineEditingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfflineEditingViewController.h; sourceTree = "<group>"; };
+		01B4320916F0D30B00A63145 /* OfflineEditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfflineEditingViewController.m; sourceTree = "<group>"; };
+		01B4320C16F0D30B00A63145 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OfflineEditingViewController_iPhone.xib; sourceTree = "<group>"; };
+		01B4320F16F0D30B00A63145 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OfflineEditingViewController_iPad.xib; sourceTree = "<group>"; };
+		01B4321616F0D3C100A63145 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01B4321816F0D3D800A63145 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		01B4321A16F0D3E500A63145 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		01B4321C16F0D3EE00A63145 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		01B4321E16F0D3F800A63145 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		01B4322016F0D40900A63145 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		01B4322216F0D41500A63145 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		01B4322416F0D42800A63145 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01B4322716F0D4B800A63145 /* iFEMA_MobileReporter_iPad_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iFEMA_MobileReporter_iPad_29.png; sourceTree = "<group>"; };
+		01B4322816F0D4B800A63145 /* iFEMA_MobileReporter_iPad_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iFEMA_MobileReporter_iPad_50.png; sourceTree = "<group>"; };
+		01B4322916F0D4B800A63145 /* iFEMA_MobileReporter_iPad_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iFEMA_MobileReporter_iPad_512.png; sourceTree = "<group>"; };
+		01B4322A16F0D4B800A63145 /* iReporter_iPad_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iReporter_iPad_50.png; sourceTree = "<group>"; };
+		01B4322B16F0D4B800A63145 /* iReporter_iPad_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iReporter_iPad_29.png; sourceTree = "<group>"; };
+		01B4322C16F0D4B800A63145 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		01B4322D16F0D4B800A63145 /* iReporter_iPad_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iReporter_iPad_512.png; sourceTree = "<group>"; };
+		01B4322E16F0D4B800A63145 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		01B4322F16F0D4B800A63145 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		01B4323016F0D4B800A63145 /* Default-Landscape~ipad_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad_old.png"; sourceTree = "<group>"; };
+		01B4323116F0D4B800A63145 /* Default-Portrait~ipad_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad_old.png"; sourceTree = "<group>"; };
+		01B4323216F0D4B800A63145 /* iFEMA_MobileReporter_iPad_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iFEMA_MobileReporter_iPad_72.png; sourceTree = "<group>"; };
+		01B4323316F0D4B800A63145 /* PolygonReport20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PolygonReport20.png; sourceTree = "<group>"; };
+		01B4323416F0D4B800A63145 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		01B4323516F0D4B800A63145 /* Settings20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings20.png; sourceTree = "<group>"; };
+		01B4323616F0D4B800A63145 /* CheckIn20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckIn20.png; sourceTree = "<group>"; };
+		01B4323716F0D4B800A63145 /* Report20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Report20.png; sourceTree = "<group>"; };
+		01B4324916F0D4DB00A63145 /* Mobile_ReporterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mobile_ReporterViewController.h; sourceTree = "<group>"; };
+		01B4324A16F0D4DB00A63145 /* Mobile_ReporterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mobile_ReporterViewController.m; sourceTree = "<group>"; };
+		01B4324B16F0D4DB00A63145 /* Mobile_ReporterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_ReporterViewController.xib; sourceTree = "<group>"; };
+		01B4324C16F0D4DB00A63145 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		01B4324D16F0D4DB00A63145 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		01B4324E16F0D4DB00A63145 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		01B4324F16F0D4DB00A63145 /* FeatureTemplatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureTemplatePickerViewController.h; sourceTree = "<group>"; };
+		01B4325016F0D4DB00A63145 /* FeatureTemplatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureTemplatePickerViewController.m; sourceTree = "<group>"; };
+		01B4325116F0D4DC00A63145 /* FeatureTemplatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeatureTemplatePickerViewController.xib; sourceTree = "<group>"; };
+		01B4325216F0D4DC00A63145 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		01B4325316F0D4DC00A63145 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		01B4325B16F0DA2000A63145 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B431EA16F0D30B00A63145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B4325C16F0DA2000A63145 /* QuartzCore.framework in Frameworks */,
+				01B431F516F0D30B00A63145 /* CoreGraphics.framework in Frameworks */,
+				01B4322516F0D42800A63145 /* Security.framework in Frameworks */,
+				01B4322316F0D41500A63145 /* MobileCoreServices.framework in Frameworks */,
+				01B4322116F0D40900A63145 /* MediaPlayer.framework in Frameworks */,
+				01B4321F16F0D3F800A63145 /* OpenGLES.framework in Frameworks */,
+				01B4321D16F0D3EE00A63145 /* libz.dylib in Frameworks */,
+				01B4321B16F0D3E500A63145 /* libc++.dylib in Frameworks */,
+				01B4321916F0D3D800A63145 /* CoreText.framework in Frameworks */,
+				01B4321716F0D3C100A63145 /* CoreLocation.framework in Frameworks */,
+				01B431F116F0D30B00A63145 /* UIKit.framework in Frameworks */,
+				01B431F316F0D30B00A63145 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B431E416F0D30B00A63145 = {
+			isa = PBXGroup;
+			children = (
+				01B431F616F0D30B00A63145 /* MobileReport2013 */,
+				01B431EF16F0D30B00A63145 /* Frameworks */,
+				01B431EE16F0D30B00A63145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B431EE16F0D30B00A63145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B431ED16F0D30B00A63145 /* MobileReporter2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B431EF16F0D30B00A63145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B4325B16F0DA2000A63145 /* QuartzCore.framework */,
+				01B4322416F0D42800A63145 /* Security.framework */,
+				01B4322216F0D41500A63145 /* MobileCoreServices.framework */,
+				01B4322016F0D40900A63145 /* MediaPlayer.framework */,
+				01B4321E16F0D3F800A63145 /* OpenGLES.framework */,
+				01B4321C16F0D3EE00A63145 /* libz.dylib */,
+				01B4321A16F0D3E500A63145 /* libc++.dylib */,
+				01B4321816F0D3D800A63145 /* CoreText.framework */,
+				01B4321616F0D3C100A63145 /* CoreLocation.framework */,
+				01B431F016F0D30B00A63145 /* UIKit.framework */,
+				01B431F216F0D30B00A63145 /* Foundation.framework */,
+				01B431F416F0D30B00A63145 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B431F616F0D30B00A63145 /* MobileReport2013 */ = {
+			isa = PBXGroup;
+			children = (
+				01B4324916F0D4DB00A63145 /* Mobile_ReporterViewController.h */,
+				01B4324A16F0D4DB00A63145 /* Mobile_ReporterViewController.m */,
+				01B4324B16F0D4DB00A63145 /* Mobile_ReporterViewController.xib */,
+				01B4324C16F0D4DB00A63145 /* SettingsViewController.h */,
+				01B4324D16F0D4DB00A63145 /* SettingsViewController.m */,
+				01B4324E16F0D4DB00A63145 /* SettingsViewController.xib */,
+				01B4324F16F0D4DB00A63145 /* FeatureTemplatePickerViewController.h */,
+				01B4325016F0D4DB00A63145 /* FeatureTemplatePickerViewController.m */,
+				01B4325116F0D4DC00A63145 /* FeatureTemplatePickerViewController.xib */,
+				01B4325216F0D4DC00A63145 /* LoadingView.h */,
+				01B4325316F0D4DC00A63145 /* LoadingView.m */,
+				01B4322616F0D4A900A63145 /* resources */,
+				01B431FF16F0D30B00A63145 /* OfflineEditingAppDelegate.h */,
+				01B4320016F0D30B00A63145 /* OfflineEditingAppDelegate.m */,
+				01B4320816F0D30B00A63145 /* OfflineEditingViewController.h */,
+				01B4320916F0D30B00A63145 /* OfflineEditingViewController.m */,
+				01B4320B16F0D30B00A63145 /* OfflineEditingViewController_iPhone.xib */,
+				01B4320E16F0D30B00A63145 /* OfflineEditingViewController_iPad.xib */,
+				01B431F716F0D30B00A63145 /* Supporting Files */,
+			);
+			path = MobileReport2013;
+			sourceTree = "<group>";
+		};
+		01B431F716F0D30B00A63145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01B431F816F0D30B00A63145 /* MobileReport2013-Info.plist */,
+				01B431F916F0D30B00A63145 /* InfoPlist.strings */,
+				01B431FC16F0D30B00A63145 /* main.m */,
+				01B431FE16F0D30B00A63145 /* MobileReport2013-Prefix.pch */,
+				01B4320216F0D30B00A63145 /* Default.png */,
+				01B4320416F0D30B00A63145 /* Default@2x.png */,
+				01B4320616F0D30B00A63145 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01B4322616F0D4A900A63145 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				01B4322716F0D4B800A63145 /* iFEMA_MobileReporter_iPad_29.png */,
+				01B4322816F0D4B800A63145 /* iFEMA_MobileReporter_iPad_50.png */,
+				01B4322916F0D4B800A63145 /* iFEMA_MobileReporter_iPad_512.png */,
+				01B4322A16F0D4B800A63145 /* iReporter_iPad_50.png */,
+				01B4322B16F0D4B800A63145 /* iReporter_iPad_29.png */,
+				01B4322C16F0D4B800A63145 /* Icon-72.png */,
+				01B4322D16F0D4B800A63145 /* iReporter_iPad_512.png */,
+				01B4322E16F0D4B800A63145 /* Default-Portrait~ipad.png */,
+				01B4322F16F0D4B800A63145 /* Default-Landscape~ipad.png */,
+				01B4323016F0D4B800A63145 /* Default-Landscape~ipad_old.png */,
+				01B4323116F0D4B800A63145 /* Default-Portrait~ipad_old.png */,
+				01B4323216F0D4B800A63145 /* iFEMA_MobileReporter_iPad_72.png */,
+				01B4323316F0D4B800A63145 /* PolygonReport20.png */,
+				01B4323416F0D4B800A63145 /* location.png */,
+				01B4323516F0D4B800A63145 /* Settings20.png */,
+				01B4323616F0D4B800A63145 /* CheckIn20.png */,
+				01B4323716F0D4B800A63145 /* Report20.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B431EC16F0D30B00A63145 /* MobileReport2013 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B4321316F0D30B00A63145 /* Build configuration list for PBXNativeTarget "MobileReport2013" */;
+			buildPhases = (
+				01B431E916F0D30B00A63145 /* Sources */,
+				01B431EA16F0D30B00A63145 /* Frameworks */,
+				01B431EB16F0D30B00A63145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileReport2013;
+			productName = MobileReport2013;
+			productReference = 01B431ED16F0D30B00A63145 /* MobileReporter2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B431E516F0D30B00A63145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OfflineEditing;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Esri;
+			};
+			buildConfigurationList = 01B431E816F0D30B00A63145 /* Build configuration list for PBXProject "MobileReport2013" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01B431E416F0D30B00A63145;
+			productRefGroup = 01B431EE16F0D30B00A63145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B431EC16F0D30B00A63145 /* MobileReport2013 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B431EB16F0D30B00A63145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B431FB16F0D30B00A63145 /* InfoPlist.strings in Resources */,
+				01B4320316F0D30B00A63145 /* Default.png in Resources */,
+				01B4320516F0D30B00A63145 /* Default@2x.png in Resources */,
+				01B4320716F0D30B00A63145 /* Default-568h@2x.png in Resources */,
+				01B4320D16F0D30B00A63145 /* OfflineEditingViewController_iPhone.xib in Resources */,
+				01B4321016F0D30B00A63145 /* OfflineEditingViewController_iPad.xib in Resources */,
+				01B4323816F0D4B800A63145 /* iFEMA_MobileReporter_iPad_29.png in Resources */,
+				01B4323916F0D4B800A63145 /* iFEMA_MobileReporter_iPad_50.png in Resources */,
+				01B4323A16F0D4B800A63145 /* iFEMA_MobileReporter_iPad_512.png in Resources */,
+				01B4323B16F0D4B800A63145 /* iReporter_iPad_50.png in Resources */,
+				01B4323C16F0D4B800A63145 /* iReporter_iPad_29.png in Resources */,
+				01B4323D16F0D4B800A63145 /* Icon-72.png in Resources */,
+				01B4323E16F0D4B800A63145 /* iReporter_iPad_512.png in Resources */,
+				01B4323F16F0D4B800A63145 /* Default-Portrait~ipad.png in Resources */,
+				01B4324016F0D4B800A63145 /* Default-Landscape~ipad.png in Resources */,
+				01B4324116F0D4B800A63145 /* Default-Landscape~ipad_old.png in Resources */,
+				01B4324216F0D4B800A63145 /* Default-Portrait~ipad_old.png in Resources */,
+				01B4324316F0D4B800A63145 /* iFEMA_MobileReporter_iPad_72.png in Resources */,
+				01B4324416F0D4B800A63145 /* PolygonReport20.png in Resources */,
+				01B4324516F0D4B800A63145 /* location.png in Resources */,
+				01B4324616F0D4B800A63145 /* Settings20.png in Resources */,
+				01B4324716F0D4B800A63145 /* CheckIn20.png in Resources */,
+				01B4324816F0D4B800A63145 /* Report20.png in Resources */,
+				01B4325516F0D4DC00A63145 /* Mobile_ReporterViewController.xib in Resources */,
+				01B4325716F0D4DC00A63145 /* SettingsViewController.xib in Resources */,
+				01B4325916F0D4DC00A63145 /* FeatureTemplatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B431E916F0D30B00A63145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B431FD16F0D30B00A63145 /* main.m in Sources */,
+				01B4320116F0D30B00A63145 /* OfflineEditingAppDelegate.m in Sources */,
+				01B4320A16F0D30B00A63145 /* OfflineEditingViewController.m in Sources */,
+				01B4325416F0D4DC00A63145 /* Mobile_ReporterViewController.m in Sources */,
+				01B4325616F0D4DC00A63145 /* SettingsViewController.m in Sources */,
+				01B4325816F0D4DC00A63145 /* FeatureTemplatePickerViewController.m in Sources */,
+				01B4325A16F0D4DC00A63145 /* LoadingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01B431F916F0D30B00A63145 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B431FA16F0D30B00A63145 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01B4320B16F0D30B00A63145 /* OfflineEditingViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B4320C16F0D30B00A63145 /* en */,
+			);
+			name = OfflineEditingViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		01B4320E16F0D30B00A63145 /* OfflineEditingViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B4320F16F0D30B00A63145 /* en */,
+			);
+			name = OfflineEditingViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B4321116F0D30B00A63145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01B4321216F0D30B00A63145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01B4321416F0D30B00A63145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Environmental Systems Research Institute Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Environmental Systems Research Institute Inc.";
+				FRAMEWORK_SEARCH_PATHS = "/Users/frank/Library/SDKs/ArcGIS/iOS/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileReport2013/MobileReport2013-Prefix.pch";
+				INFOPLIST_FILE = "MobileReport2013/MobileReport2013-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = MobileReporter2;
+				PROVISIONING_PROFILE = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01B4321516F0D30B00A63145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Environmental Systems Research Institute Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Environmental Systems Research Institute Inc.";
+				FRAMEWORK_SEARCH_PATHS = "/Users/frank/Library/SDKs/ArcGIS/iOS/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileReport2013/MobileReport2013-Prefix.pch";
+				INFOPLIST_FILE = "MobileReport2013/MobileReport2013-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = MobileReporter2;
+				PROVISIONING_PROFILE = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D4DAAF43-01AF-4049-88ED-1B97F2A462AA";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B431E816F0D30B00A63145 /* Build configuration list for PBXProject "MobileReport2013" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4321116F0D30B00A63145 /* Debug */,
+				01B4321216F0D30B00A63145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B4321316F0D30B00A63145 /* Build configuration list for PBXNativeTarget "MobileReport2013" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4321416F0D30B00A63145 /* Debug */,
+				01B4321516F0D30B00A63145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B431E516F0D30B00A63145 /* Project object */;
+}
